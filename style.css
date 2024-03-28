@@ -1,0 +1,338 @@
+*{
+	margin : 0;
+	padding : 0;
+}
+
+header{
+	background-image: url("images/a.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	position: relative;
+
+}
+
+header img{
+	border-radius: 50%;
+	padding: 30px;
+	width: 80px;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-links{
+	flex: 1;
+	text-align: right;
+
+}
+nav .fa-bars{
+	color : black;
+    padding: 10px;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding-right: 50px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav ul li {
+	display: inline;
+	padding: 10px;
+}
+
+
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+}
+
+nav div ul li a::after{
+    content:'';
+    background-color: darkred;
+    display: block;
+    width: 0; /*display block demeseydik inline element olarak widt ve height a deger veremezdik!!*/
+    height: 3px;
+    margin-top: 3px;
+
+}
+
+nav div ul li a:hover::after{
+	width: 100%;
+	transition: .3s;
+    
+}
+
+
+header .fa-bars{
+    align-items: right;
+    font-size: 20px;
+    color: white;
+    padding-right: 20px;
+    cursor: pointer;
+
+}
+
+.title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+	text-align: center;
+
+}
+.title h1{
+	font-size: 60px;
+	color: white;
+}
+.title p{
+	font-size: 16px;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.title a{
+	border: 1px solid white;
+	padding: 7px;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+
+}
+.title a:hover{
+	background-color: darkred;
+	transition: .3s;
+
+}
+
+.align-container{
+	width: 80%;
+	margin: auto;
+	padding-top: 60px;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+ .row{
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.align-item{
+	flex-basis: 30%;
+	border-radius: 10px;
+	padding: 20px 12px;
+	margin: 10px;
+}
+
+section h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+section p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+ }
+
+  section h3{
+    margin: 10px 0;
+ }
+
+ .course-col{
+ 	background-color: floralwhite;
+
+ }
+
+ .course-col:hover{
+ 	box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+ 	transition: .3s;
+ }
+
+
+
+
+.campus-col{
+	position: relative;
+}
+
+.campus-col img{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+
+.campus-col .layer{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+
+}
+.layer:hover{
+	background-color: rgba(230, 118, 6, 0.5);
+
+}
+
+.layer h3{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	opacity: 0;
+
+}
+
+.layer:hover h3{
+ 	bottom: 50%;
+ 	opacity: 1;
+ 	transition: .6s;
+}
+
+
+.facilities img{
+	border-radius: 10px;
+	width: 100%;
+}
+
+.facilities h4{
+	margin-top: 10px;
+	text-align: left;	
+}
+
+.facilities .align-item p{
+	margin-top: 15px;
+	text-align: left;
+	margin-left: 0;
+	padding: 0;
+}
+
+.facilities .h4-p{
+	background-color: #fff5ee;
+	padding:10px;
+	margin: 10px 0;
+	border-radius: 10px;
+}
+
+
+.row{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25px;
+} 
+
+.testimonials img{
+	border-radius: 50%;
+	text-align: left;
+	margin-right: 10px;
+	padding: 10px;
+}
+
+.testimonials-column{
+	display: flex;
+	background-color: #eee9e9;
+	flex-basis: 30%;
+	border-radius: 10px;
+	margin:10px;
+
+}
+.testimonials-column .p-h4{
+	text-align: left;
+}
+
+.testimonials-column .p-h4{
+	padding: 15px 10px;
+}
+.testimonials-column .p-h4 h4{
+	padding: 10px 0;
+}
+
+.fa-star, .fa-star-half-o{
+	color: darkred;
+}
+
+.ua{
+	opacity: .7;
+	background-image: url("images/waschington.jpg");
+	background-position: center;
+	background-size: cover;
+	color: white;
+	padding: 80px 0;
+	border-radius: 10px;
+	margin: 80px auto;
+	text-align: center;
+	width: 30%;
+
+}
+.hero-btn{
+
+	color: white;
+	text-decoration: none;
+	border: 1px solid white;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.hero-btn:hover{
+	background-color: darkred;
+	transition: .3s;
+	border:none;
+}
+
+footer p{
+	margin:15px;
+	line-height: 20px;
+}
+.icons{
+	color: darkred;
+	padding: 10px;
+}
+.fa-heart{
+	color: darkred;
+}
+
+.icons .fa{
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+@media(max-width:675px)
+{
+	.nav-links{
+		display: none;
+	}
+
+	.fa-bars{
+		display: block;
+	}
+	.title h1{
+		font-size: 30px;
+	}
+	.row{
+		flex-direction: column;
+	}
+	.ua h1{
+		font-size:25px;
+	}
+	.ua a{
+		font-size: 10px;
+	}
+	.ua{
+		width: 75%;
+	}
+}
