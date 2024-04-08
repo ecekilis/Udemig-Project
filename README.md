@@ -14,4 +14,6 @@ HTML and CSS
 
 <h4>Preview</h4>
 
-![](udemig.gif)
+![][def]
+
+[def]: udemig.gif
