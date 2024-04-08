@@ -10,10 +10,8 @@ It is responsive and can work in many sizes.
 
 <h3>Used technologies</h3>
 
-HTML and CSS
+HTML-CSS
 
 <h4>Preview</h4>
 
-![][def]
-
-[def]: udemig.gif
+![](udemig.gif)
